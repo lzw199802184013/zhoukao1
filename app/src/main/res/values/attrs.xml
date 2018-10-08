@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaterView">
+        <attr name="mPaintTop" format="color"></attr>
+        <attr name="mPaintBottom" format="color"></attr>
+    </declare-styleable>
+
+</resources>

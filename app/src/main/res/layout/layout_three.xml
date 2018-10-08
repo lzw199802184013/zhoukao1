@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:water="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/back"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/linearlayout"
+        android:layout_height="200dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher_round"
+            android:id="@+id/img"
+            android:layout_above="@id/water"
+            />
+        <com.example.lzw.zhoukao1.WaterView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/water"
+            android:layout_alignParentBottom="true"
+            water:mPaintTop="#0000FF"
+            water:mPaintBottom="#00FFFF"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
